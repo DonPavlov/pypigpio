@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 import time
 import sys  # to be possible to import argument
 
-PIN = sys.argv[0]
+PIN =  int(sys.argv[1])
 print('Eingabe war PIN: ' + str(PIN))
 
 GPIO.setmode(GPIO.BCM)
